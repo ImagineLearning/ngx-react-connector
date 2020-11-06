@@ -1,5 +1,5 @@
 {
-	"name": "ngx-react-connector",
+	"name": "@imaginelearning/ngx-react-connector",
 	"version": "1.0.0",
 	"author": "Héctor Reyes López",
 	"license": "MIT",
@@ -7,12 +7,12 @@
 	"private": false,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/hreyeslo/ngx-react-connector.git"
+		"url": "https://github.com/imaginelearning/ngx-react-connector.git"
 	},
 	"bugs": {
-		"url": "https://github.com/hreyeslo/ngx-react-connector/issues"
+		"url": "https://github.com/imaginelearning/ngx-react-connector/issues"
 	},
-	"homepage": "https://github.com/hreyeslo/ngx-react-connector#readme",
+	"homepage": "https://github.com/imaginelearning/ngx-react-connector#readme",
 	"keywords": [
 		"angular",
 		"react"

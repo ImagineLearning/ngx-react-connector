@@ -10,9 +10,9 @@ export class ReactConnectorDirective implements OnInit, OnChanges {
 
 	@Input('reactConnectorComponent') reactConnectorComponent: any;
 
-	@Input() reactProps: {[key: string]: any};
+	@Input() reactProps: { [key: string]: any };
 
-	@Input() reactEvents: {[key: string]: () => any};
+	@Input() reactEvents: { [key: string]: () => any };
 
 	@Input() reactClassContainer: string;
 
@@ -37,8 +37,24 @@ export class ReactConnectorDirective implements OnInit, OnChanges {
 		}
 	}
 
+	isClassComponent(component): boolean {
+		return (typeof component === 'function' && !!component.prototype.isReactComponent);
+	}
+
+	isFunctionComponent(component): boolean {
+		const componentString = String(component);
+		return (typeof component === 'function' && !!componentString.match(/React([^\.]+)?\.createElement/ig));
+	}
+
+	isReactComponent(component): boolean {
+		return (
+			this.isClassComponent(component) ||
+			this.isFunctionComponent(component)
+		);
+	}
+
 	render() {
-		const isReactComponent = get(this.reactConnectorComponent, 'prototype.isReactComponent');
+		const isReactComponent = this.isReactComponent(this.reactConnectorComponent);
 		if (isReactComponent && this._viewContainerRef) {
 			this._viewContainerRef.clear();
 			const componentFactory = this._componentFactoryResolver.resolveComponentFactory(ReactConnectorComponent);

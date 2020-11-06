@@ -8,12 +8,17 @@
 		"test:app": "ng test",
 		"start": "ng build ngx-react-connector --watch",
 		"build": "ng build ngx-react-connector",
+		"npm-pack": "cd dist/ngx-react-connector && npm pack",
+		"package": "npm run build && npm pack",
 		"test": "ng test ngx-react-connector",
 		"coverage": "ng test --code-coverage",
 		"lint": "ng lint",
 		"e2e": "ng e2e"
 	},
 	"private": true,
+	"files": [
+		"dist"
+	],
 	"dependencies": {
 		"@angular/animations": "~9.1.9",
 		"@angular/common": "~9.1.9",

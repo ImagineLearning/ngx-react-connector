@@ -1,5 +1,5 @@
 {
-	"name": "ngx-react-connector",
+	"name": "@imaginelearning/ngx-react-connector",
 	"version": "1.0.0",
 	"scripts": {
 		"ng": "ng",
@@ -7,11 +7,13 @@
 		"build:app": "ng build",
 		"test:app": "ng test",
 		"start": "ng build ngx-react-connector --watch",
-		"build": "ng build ngx-react-connector",
+		"build": "ng build ngx-react-connector --prod",
 		"test": "ng test ngx-react-connector",
 		"coverage": "ng test --code-coverage",
 		"lint": "ng lint",
-		"e2e": "ng e2e"
+		"e2e": "ng e2e",
+		"npm-publish": "cpx .npmrc dist/ngx-react-connector && cd dist/ngx-react-connector && yarn publish",
+		"prenpm-publish": "yarn build"
 	},
 	"private": true,
 	"dependencies": {
@@ -43,6 +45,7 @@
 		"@types/react": "^16.9.36",
 		"@types/react-dom": "^16.9.8",
 		"codelyzer": "^5.1.2",
+		"cpx": "^1.5.0",
 		"jasmine-core": "~3.5.0",
 		"jasmine-spec-reporter": "~4.2.1",
 		"karma": "~5.0.0",

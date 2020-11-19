@@ -43,7 +43,8 @@ export class ReactConnectorDirective implements OnInit, OnChanges {
 
 	isFunctionComponent(component): boolean {
 		const componentString = String(component);
-		return (typeof component === 'function' && !!componentString.match(/React([^\.]+)?\.createElement/ig));
+		// return (typeof component === 'function' && !!componentString.match(/React([^\.]+)?\.createElement/ig));
+		return (typeof component === 'function' && !!componentString.match(/.createElement/ig));
 	}
 
 	isReactComponent(component): boolean {

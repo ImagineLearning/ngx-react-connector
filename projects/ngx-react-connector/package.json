@@ -1,6 +1,6 @@
 {
 	"name": "@imaginelearning/ngx-react-connector",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"author": "Héctor Reyes López",
 	"license": "MIT",
 	"description": "This library is a connector that allows React components to be used in Angular applications easily.",
@@ -19,12 +19,12 @@
 	],
 	"peerDependencies": {
 		"@angular/common": "^9.1.11",
-		"@angular/core": "^9.1.11"
+		"@angular/core": "^9.1.11",
+		"react": ">=16.11",
+		"react-dom": ">=16.11"
 	},
 	"dependencies": {
 		"tslib": "^1.10.0",
-		"lodash": "^4.17.15",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2"
+		"lodash": "^4.17.15"
 	}
 }

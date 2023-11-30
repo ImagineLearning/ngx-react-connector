@@ -21,9 +21,7 @@
 		"@angular/common": "^9.1.11",
 		"@angular/core": "^9.1.11",
 		"react": ">=16.11",
-		"react-dom": ">=16.11"
-	},
-	"dependencies": {
+		"react-dom": ">=16.11",
 		"tslib": "^1.10.0",
 		"lodash": "^4.17.15"
 	}

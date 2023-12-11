@@ -7,7 +7,7 @@
 		"build:app": "ng build",
 		"test:app": "ng test",
 		"start": "ng build ngx-react-connector --watch",
-		"build": "ng build ngx-react-connector",
+		"build": "ng build ngx-react-connector --configuration production",
 		"test": "ng test ngx-react-connector",
 		"coverage": "ng test --code-coverage",
 		"lint": "ng lint",

@@ -18,8 +18,8 @@
 		"react"
 	],
 	"peerDependencies": {
-		"@angular/common": "^9.1.11",
-		"@angular/core": "^9.1.11",
+		"@angular/common": "^~16.2.11",
+		"@angular/core": "^~16.2.11",
 		"react": ">=16.11",
 		"react-dom": ">=16.11",
 		"tslib": "^1.10.0",

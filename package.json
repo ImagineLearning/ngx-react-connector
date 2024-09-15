@@ -1,13 +1,13 @@
 {
 	"name": "@imaginelearning/ngx-react-connector",
-	"version": "1.2.0",
+	"version": "2.0.0",
 	"scripts": {
 		"ng": "ng",
 		"start:app": "ng serve",
 		"build:app": "ng build",
 		"test:app": "ng test",
 		"start": "ng build ngx-react-connector --watch",
-		"build": "ng build ngx-react-connector --prod",
+		"build": "ng build ngx-react-connector --configuration production",
 		"test": "ng test ngx-react-connector",
 		"coverage": "ng test --code-coverage",
 		"lint": "ng lint",
@@ -16,16 +16,15 @@
 		"prenpm-publish": "yarn build"
 	},
 	"private": true,
-	"dependencies": {
-		"@angular/animations": "~9.1.9",
-		"@angular/common": "~9.1.9",
-		"@angular/compiler": "~9.1.9",
-		"@angular/core": "~9.1.9",
-		"@angular/forms": "~9.1.9",
-		"@angular/platform-browser": "~9.1.9",
-		"@angular/platform-browser-dynamic": "~9.1.9",
-		"@angular/router": "~9.1.9",
-		"lodash": "^4.17.15",
+	"peerDependencies": {
+		"@angular/animations": "~16.2.11",
+		"@angular/common": "~16.2.11",
+		"@angular/compiler": "~16.2.11",
+		"@angular/core": "~16.2.11",
+		"@angular/forms": "~16.2.11",
+		"@angular/platform-browser": "~16.2.11",
+		"@angular/platform-browser-dynamic": "~16.2.11",
+		"@angular/router": "~16.2.11",
 		"office-ui-fabric-react": "^7.120.0",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
@@ -34,10 +33,13 @@
 		"zone.js": "~0.10.2"
 	},
 	"devDependencies": {
-		"@angular-devkit/build-angular": "~0.901.7",
+		"@angular-devkit/build-angular": "~16.2.8",
 		"@angular-devkit/build-ng-packagr": "~0.901.8",
-		"@angular/cli": "~9.1.7",
-		"@angular/compiler-cli": "~9.1.9",
+		"@angular/cli": "~16.2.8",
+		"@angular/common": "~16.2.11",
+		"@angular/compiler": "~16.2.11",
+		"@angular/compiler-cli": "~16.2.11",
+		"@angular/core": "~16.2.11",
 		"@types/jasmine": "~3.5.0",
 		"@types/jasminewd2": "~2.0.3",
 		"@types/lodash": "^4.14.155",
@@ -53,10 +55,11 @@
 		"karma-coverage-istanbul-reporter": "~2.1.0",
 		"karma-jasmine": "~3.0.1",
 		"karma-jasmine-html-reporter": "^1.4.2",
-		"ng-packagr": "^9.0.0",
+		"lodash": "^4.17.15",
+		"ng-packagr": "~16.2.3",
 		"protractor": "~7.0.0",
 		"ts-node": "~8.3.0",
 		"tslint": "~6.1.0",
-		"typescript": "~3.8.3"
+		"typescript": "~5.1.6"
 	}
 }
